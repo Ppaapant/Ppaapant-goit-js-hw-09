@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="node_modules/simplelightbox/dist/simple-lightbox.min.css">
+  <style>
+    ul.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .gallery-item {
+      width: calc(33.333% - 10px);
+    }
+    .gallery-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
   </head>
   <body>
     
 
     <main>
-      
+      <ul class="gallery"></ul>
       <a class="back-link" href="./index.html">Go back</a>
     </main>
 
