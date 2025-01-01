@@ -1,6 +1,5 @@
-// Імпортуємо бібліотеку та стилі
+
 import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
 const images = [
       {
         preview:
@@ -70,7 +69,7 @@ const images = [
 
 
 
-// Генеруємо розмітку
+
 const galleryContainer = document.querySelector(".gallery");
 const galleryMarkup = images
   .map(
@@ -89,10 +88,10 @@ const galleryMarkup = images
 
 galleryContainer.innerHTML = galleryMarkup;
 
-// Ініціалізація SimpleLightbox
+
 const lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: "alt", // Підпис із атрибуту alt
-  captionDelay: 250,   // Затримка появи підпису
-  captionPosition: "bottom", // Розташування підпису
+  captionsData: "alt",
+  captionDelay: 250,   
+  captionPosition: "bottom", 
 });
 

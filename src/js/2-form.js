@@ -12,9 +12,9 @@ function saveToLocalStorage() {
 function loadFromLocalStorage() {
   const savedData = localStorage.getItem(LOCAL_STORAGE_KEY); 
   if (savedData) {
-    formData = JSON.parse(savedData); // Парсимо дані
-    form.elements.email.value = formData.email; // Встановлюємо значення в поле email
-    form.elements.message.value = formData.message; // Встановлюємо значення в поле message
+    formData = JSON.parse(savedData);
+    form.elements.email.value = formData.email; 
+    form.elements.message.value = formData.message;
   }
 }
 
@@ -29,7 +29,7 @@ form.addEventListener('input', (event) => {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  // Перевірка заповнення полів
+  
   if (!formData.email || !formData.message) {
     alert('Fill please all fields'); 
     return;
